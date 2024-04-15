@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Filter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="search-container">
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="What will you enjoy next? (search a Movie Title, Song Name, or TV Show)">
+            <button onclick="searchMedia()">Search</button>
+        </div>
+        <div class="filters">
+            <label for="media-type">Select Media Type:</label>
+            <select id="media-type">
+                <!-- Options will be populated dynamically using JavaScript -->
+            </select>
+
+            <label for="genre">Select Genre:</label>
+            <select id="genre">
+                <!-- Options will be populated dynamically using JavaScript -->
+            </select>
+
+            <label for="year">Select Year:</label>
+            <select id="year">
+                <!-- Options will be populated dynamically using JavaScript -->
+            </select>
+
+            <button onclick="fetchMedia()">Fetch Media</button>
+        </div>
+    </div>
+
+    <div id="media-details" class="media-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
